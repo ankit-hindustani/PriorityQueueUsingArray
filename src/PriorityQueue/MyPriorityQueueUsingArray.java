@@ -47,12 +47,13 @@ public class MyPriorityQueueUsingArray {
 // remove(poll/dequeue) element from head of the queue.
     /* This dequeue method is created using O(1), therefore if the number of dequeue is equal to
     the number of queue size then again enqueue is impossible */
+    //all bug fixed
 public int dequeue(){
     int response=0;
-    if(isEmpty()){
+    if(isEmpty() || (front>rear) ){
         System.out.print("queue is empty ");
     }
-    else{
+    else if(front <= rear){
     response=queue[front];
     front++;
     }
