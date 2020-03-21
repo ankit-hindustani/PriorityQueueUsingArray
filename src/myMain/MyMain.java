@@ -19,7 +19,7 @@ public class MyMain {
 
         System.out.println("dequeue= "+obj.dequeue());
         System.out.println("dequeue= "+obj.dequeue());
-       // System.out.println("dequeue= "+obj.dequeue());
+        System.out.println("dequeue= "+obj.dequeue());
         obj.traverse();
 
     }
